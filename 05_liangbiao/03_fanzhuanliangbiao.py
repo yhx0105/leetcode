@@ -37,14 +37,9 @@ class Solution:
             midpointer=rightpointer
             rightpointer=rightpointer.next
         midpointer.next=leftpointer
-        return rightpointer
+        return midpointer
 
-    #递归法
-    def ReverseList3(self, pHead):
-        pTmp=self.ReverseList3(pHead.next)
-        pHead.next.next=pHead
-        pHead.next=None
-        return pTmp
+
 
 
 
@@ -55,4 +50,5 @@ if __name__ == '__main__':
     p1.next=p2
     p2.next=p3
     s=Solution()
-    l1=s.ReverseList3(p1)
+    l1=s.ReverseList2(p1)
+    print(l1)
