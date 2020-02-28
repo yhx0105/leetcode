@@ -74,7 +74,7 @@ class Solution():
 
 
 if __name__ == '__main__':
-    nums=[35,33,42,10,14,19,27,44]
+    nums=[35,33,42]
     s=Solution()
-    s.fastSort(nums,0,7)
-    print(nums)
+    print(s.mergeSort(nums))
+
