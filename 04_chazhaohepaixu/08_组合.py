@@ -34,4 +34,4 @@ if __name__ == '__main__':
     n=4
     k=2
     s=Solution()
-    print(s.combine1(n,k))
+    print(s.combine(n,k))
