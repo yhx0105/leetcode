@@ -38,8 +38,15 @@ class Solution:
         dfs(nums,[],size,0)
         return res
 
+    #递归
+    def subsets3(self,nums):
+        res=[[]]
+
+        for num in nums:
+            res+=[curr + [num] for curr in res]
+        return res
 
 if __name__ == '__main__':
     s=Solution()
     nums=[1,2,3]
-    print(s.subsets1(nums))
+    print(s.subsets3(nums))
